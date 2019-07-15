@@ -6,7 +6,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-       classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.5.RELEASE"
     }
 }
 
@@ -23,15 +24,12 @@ group = 'com.minjae'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
 
 repositories {
     mavenCentral()
 }
+
+ext['hibernate.version'] = '5.2.11.Final'
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
