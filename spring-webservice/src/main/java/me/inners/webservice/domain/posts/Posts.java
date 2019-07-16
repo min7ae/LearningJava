@@ -1,10 +1,10 @@
-package com.minjae.springboot.domain.posts;
+package me.inners.webservice.domain.posts;
 
-import com.minjae.springboot.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import me.inners.webservice.domain.BaseTimeEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
