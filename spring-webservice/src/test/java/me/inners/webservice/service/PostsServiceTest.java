@@ -1,6 +1,5 @@
 package me.inners.webservice.service;
 
-import javafx.geometry.Pos;
 import me.inners.webservice.domain.posts.Posts;
 import me.inners.webservice.domain.posts.PostsRepository;
 import me.inners.webservice.dto.posts.PostsSaveRequestDto;
