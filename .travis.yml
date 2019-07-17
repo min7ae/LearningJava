@@ -12,6 +12,9 @@ cache:
     - '$HOME/spring-webservice/.m2/repository'
     - '$HOME/spring-webservice/.gradle'
 
+before_install:
+  - chmod +x '$HOME/spring-webservice/gradlew'
+
 script: "./spring-webservice/gradlew clean build"
 
 # CI 실행 완료시 메일로 알람
