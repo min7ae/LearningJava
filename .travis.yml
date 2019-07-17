@@ -13,7 +13,7 @@ cache:
     - '$HOME/spring-webservice/.gradle'
 
 before_install:
-  - chmod +x '$HOME/spring-webservice/gradlew'
+  - chmod +x 'spring-webservice/gradlew'
 
 script: "./spring-webservice/gradlew clean build"
 
